@@ -15,32 +15,46 @@
     text-align: center;
     margin-top: 25px;
     margin-bottom: 15px;
+    font-size: 55px;
   }
 
   /* loader */
-  .loader{
-    position:fixed;
+  .loader {
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255,0.8);
+    background: rgba(255, 255, 255, 0.8);
   }
 
 
-  .loader img{
+  .loader img {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 
-/* image continer */
+  /* image continer */
 
-.image-container{
-  margin: 10px 30%;
-}
+  .image-container {
+    margin: 10px 30%;
+  }
 
-.image-container img{
-  width: 100%;
-}
+  .image-container img {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+
+  /* media query:large smartphone */
+  @media screen and (max-width:600px) {
+    h1{
+      font-size: 30px;
+    }
+
+    .image-container{
+      margin: 10px;
+    }
+  }
